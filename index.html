@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Consultant Set Time Calendar - Easy online appointment scheduling for professional consultations">
+    <title>Consultant Set Time Calendar - Book Your Appointment</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩺</text></svg>">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-calendar-check"></i>
+                <span>Consultant Set Time Calendar</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#calendar">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80"
+                alt="Professional consultation meeting" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content"></div>
+        <div class="hero-text">
+            <h1>Book Your Professional Consultation</h1>
+            <p>Schedule consultations with qualified professionals quickly and easily. Choose your preferred time and
+                get the expert advice you need.</p>
+            <div class="hero-buttons">
+                <a href="#calendar" class="btn btn-primary">
+                    <i class="fas fa-calendar-plus"></i>
+                    Book Appointment
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="calendar-preview">
+                <div class="calendar-header">
+                    <h3>Available Times</h3>
+                    <span class="current-date">December 2024</span>
+                </div>
+                <div class="time-slots">
+                    <div class="time-slot available">
+                        <span class="time">9:00 AM</span>
+                        <span class="status">Available</span>
+                    </div>
+                    <div class="time-slot available">
+                        <span class="time">11:30 AM</span>
+                        <span class="status">Available</span>
+                    </div>
+                    <div class="time-slot booked">
+                        <span class="time">2:00 PM</span>
+                        <span class="status">Booked</span>
+                    </div>
+                    <div class="time-slot available">
+                        <span class="time">4:30 PM</span>
+                        <span class="status">Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Consultation Services</h2>
+                <p>Professional consulting services with easy online booking</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Business Consultation</h3>
+                    <p>Strategic business advice and planning sessions with experienced consultants.</p>
+                    <div class="service-duration">
+                        <i class="fas fa-clock"></i>
+                        <span>60 minutes</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Financial Advisory</h3>
+                    <p>Investment planning, financial analysis, and wealth management consultations.</p>
+                    <div class="service-duration">
+                        <i class="fas fa-clock"></i>
+                        <span>45 minutes</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Technology Consulting</h3>
+                    <p>IT strategy, digital transformation, and technology implementation guidance.</p>
+                    <div class="service-duration">
+                        <i class="fas fa-clock"></i>
+                        <span>90 minutes</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Career Coaching</h3>
+                    <p>Professional development, career planning, and skill enhancement sessions.</p>
+                    <div class="service-duration">
+                        <i class="fas fa-clock"></i>
+                        <span>60 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Booking Section -->
+    <section id="calendar" class="calendar-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Appointment</h2>
+                <p>Select your preferred date and time</p>
+            </div>
+            <div class="booking-container">
+                <div class="calendar-widget">
+                    <div class="calendar-header">
+                        <button class="nav-btn" id="prevMonth">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h3 id="currentMonth">December 2024</h3>
+                        <button class="nav-btn" id="nextMonth">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="day-header">Sun</div>
+                        <div class="day-header">Mon</div>
+                        <div class="day-header">Tue</div>
+                        <div class="day-header">Wed</div>
+                        <div class="day-header">Thu</div>
+                        <div class="day-header">Fri</div>
+                        <div class="day-header">Sat</div>
+                        <!-- Calendar days will be generated by JavaScript -->
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <h3>Appointment Details</h3>
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="service">Select Service</label>
+                            <select id="service" required>
+                                <option value="">Choose a service</option>
+                                <option value="business">Business Consultation</option>
+                                <option value="financial">Financial Advisory</option>
+                                <option value="technology">Technology Consulting</option>
+                                <option value="career">Career Coaching</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectedDate">Selected Date</label>
+                            <input type="text" id="selectedDate" readonly placeholder="Select a date from calendar">
+                        </div>
+                        <div class="form-group">
+                            <label for="timeSlot">Available Times</label>
+                            <div class="time-slots-container" id="timeSlots">
+                                <p class="no-date">Please select a date first</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientName">Full Name</label>
+                            <input type="text" id="clientName" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientEmail">Email</label>
+                            <input type="email" id="clientEmail" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientPhone">Phone Number</label>
+                            <input type="tel" id="clientPhone" required placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Additional Notes (Optional)</label>
+                            <textarea id="notes" rows="3"
+                                placeholder="Any specific concerns or requirements"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirm Appointment
+                        </button>
+
+                        <!-- Google Calendar Booking Button -->
+                        <div class="google-calendar-section">
+                            <div class="divider">
+                                <span>OR</span>
+                            </div>
+                            <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2L5OMexgbtjiLCrgy-vZEYsKnlOTClRfIet2sgQgyG415yqQ_DWt5aPtRTPRU-gzTd0lHUvpXD?gv=true"
+                                target="_blank" class="btn btn-secondary btn-full" id="googleCalendarBtn">
+                                <i class="fas fa-google"></i>
+                                Book with Google Calendar
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>456 Business Plaza<br>Consulting District, CD 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-CONSULT</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>bookings@consultanttimecalendar.com
+                        </div>p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="emergency-info">
+                <div class="emergency-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Urgent Consultation?</h3>
+                    <p>Need immediate professional advice? Contact us for same-day consultation availability.</p>
+                    <a href="tel:+15551234567" class="btn btn-emergency">
+                        <i class="fas fa-phone"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Consultant Set Time Calendar</span>
+                </div>
+                <p>&copy; 2024 Consultant Set Time Calendar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Appointment Confirmed!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Your appointment has been successfully booked. You will receive a confirmation email shortly.</p>
+                <div class="appointment-summary" id="appointmentSummary">
+                    <!-- Appointment details will be inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
